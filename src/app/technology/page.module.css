@@ -1,0 +1,15 @@
+.main {
+    background-image: url("/assets/technology/background-technology-desktop.jpg");
+    color: white;
+
+    & h1 {
+        display: inline-flex;
+        font-size: 1.75rem;
+        gap: 1.75rem;
+        letter-spacing: 0.29531rem;
+    }
+}
+
+.swiper {
+    position: initial !important;
+}

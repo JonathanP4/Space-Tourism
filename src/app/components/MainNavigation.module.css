@@ -1,0 +1,51 @@
+.nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 20;
+    max-width: 1417px;
+    padding: 2rem 0;
+    padding-left: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
+    & div {
+        width: 52rem;
+        background: hsla(var(--white) 0.04);
+        backdrop-filter: blur(40px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    & ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 33.875rem;
+        text-transform: uppercase;
+    }
+
+    & a {
+        display: inline-flex;
+        gap: 11px;
+        padding: 2.25rem 0;
+        border-bottom: 3px solid;
+        border-color: transparent;
+        transition: all 150ms;
+
+        &:not(.active):hover {
+            border-color: hsla(0, 0%, 100%, 0.5);
+        }
+        &.active {
+            border-color: white;
+        }
+    }
+
+    & span {
+        font-weight: bold;
+    }
+}

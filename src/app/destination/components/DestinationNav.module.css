@@ -1,0 +1,21 @@
+.nav {
+    grid-column-start: 2;
+    width: 17.84375rem;
+    display: flex;
+    justify-content: space-between;
+
+    & li {
+        cursor: pointer;
+        height: 2.125rem;
+        border-bottom: 1px solid;
+        border-color: transparent;
+
+        &:not(.active):hover {
+            border-color: hsla(0, 0%, 100%, 0.5);
+        }
+
+        &.active {
+            border-color: white;
+        }
+    }
+}

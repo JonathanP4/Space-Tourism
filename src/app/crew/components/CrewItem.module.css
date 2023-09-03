@@ -1,0 +1,18 @@
+.article {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+
+    & span {
+        font-size: 2rem;
+    }
+
+    & h1 {
+        font-size: 3.5rem;
+    }
+
+    & p {
+        font-size: 1.125rem;
+    }
+}

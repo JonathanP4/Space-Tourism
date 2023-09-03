@@ -1,0 +1,22 @@
+.article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    max-width: 1047px;
+    width: 100%;
+
+    & section {
+        max-width: 445px;
+        width: 100%;
+
+        & h1 {
+            font-size: 6.25rem;
+        }
+
+        & p {
+            font-size: 1.125rem;
+            line-height: 2rem;
+        }
+    }
+}
