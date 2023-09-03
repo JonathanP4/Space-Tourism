@@ -38,7 +38,6 @@ export default function TechbologyItem({ data }: { data: Technology }) {
                     alt={data.name}
                     priority={true}
                     loading="eager"
-                    placeholder={"empty"}
                 />
             </figure>
         </article>

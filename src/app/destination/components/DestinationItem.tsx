@@ -23,8 +23,9 @@ export default function DestinationItem({ data }: { data: Destination }) {
                 <Image
                     width={445}
                     height={445}
-                    src={data.images.png}
+                    src={data.images.webp}
                     alt={data.name}
+                    priority={true}
                     loading="eager"
                 />
             </figure>

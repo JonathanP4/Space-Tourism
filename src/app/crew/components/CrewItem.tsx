@@ -1,12 +1,8 @@
 import Image from "next/image";
 import styles from "./CrewItem.module.css";
 
-import { Barlow_Condensed, Barlow, Bellefair } from "next/font/google";
+import { Barlow, Bellefair } from "next/font/google";
 
-const barlow_condensed = Barlow_Condensed({
-    subsets: ["latin"],
-    weight: ["400"],
-});
 const barlow = Barlow({
     subsets: ["latin"],
     weight: ["400"],
@@ -43,11 +39,10 @@ export default function CrewItem({ data }: { data: Crew }) {
                         width: "auto",
                         height: "auto",
                     }}
-                    src={data.images.png}
+                    src={data.images.webp}
                     alt={data.name}
                     priority={true}
                     loading="eager"
-                    placeholder={"empty"}
                 />
             </figure>
         </article>
