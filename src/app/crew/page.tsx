@@ -17,12 +17,6 @@ const barlow_condensed = Barlow_Condensed({
 });
 
 import { useState } from "react";
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-    title: "Space Tourism | Crew",
-    description: "Site generated using Next.js 13",
-};
 
 export default function Crew() {
     const [activeIndex, setActiveIndex] = useState(0);

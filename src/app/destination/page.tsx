@@ -3,7 +3,6 @@
 import styles from "./page.module.css";
 import data from "../../../data.json";
 
-import { Metadata } from "next";
 import { Barlow_Condensed } from "next/font/google";
 import DestinationItem from "./components/DestinationItem";
 
@@ -19,11 +18,6 @@ const barlow_condensed = Barlow_Condensed({
 });
 
 import { useState } from "react";
-
-export const metadata: Metadata = {
-    title: "Space Tourism | Destinations",
-    description: "Site generated using Next.js 13",
-};
 
 export default function Destination() {
     const [activeIndex, setActiveIndex] = useState(0);
