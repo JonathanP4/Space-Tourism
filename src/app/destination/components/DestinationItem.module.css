@@ -6,17 +6,56 @@
     max-width: 1047px;
     width: 100%;
 
+    @media (max-width: 1180px) {
+        text-align: center;
+        flex-direction: column;
+        gap: 6rem;
+    }
+
+    @media (max-width: 460px) {
+        gap: 5rem;
+    }
+
     & section {
         max-width: 445px;
         width: 100%;
 
+        @media (max-width: 1180px) {
+            max-width: 573px;
+        }
+
         & h1 {
             font-size: 6.25rem;
+
+            @media (max-width: 1180px) {
+                font-size: 5rem;
+            }
+
+            @media (max-width: 460px) {
+                font-size: 3.5rem;
+            }
         }
 
         & p {
             font-size: 1.125rem;
             line-height: 2rem;
+
+            @media (max-width: 1180px) {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    figure {
+        @media (max-width: 1180px) {
+            width: 300px;
+            height: 300px;
+            margin: auto;
+        }
+
+        @media (max-width: 460px) {
+            width: 170px;
+            height: 170px;
         }
     }
 }

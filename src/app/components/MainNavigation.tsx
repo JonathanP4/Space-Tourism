@@ -22,7 +22,7 @@ export default function MainNavigation() {
                 src={"/assets/shared/logo.svg"}
                 alt="space tourism logo"
             />
-            <div>
+            <div className={styles.desktopNav}>
                 <ul>
                     <li>
                         <Link
@@ -65,6 +65,14 @@ export default function MainNavigation() {
                         </Link>
                     </li>
                 </ul>
+            </div>
+            <div className={styles.mobileNav}>
+                <Image
+                    src={"/assets/shared/icon-hamburger.svg"}
+                    width={24}
+                    height={21}
+                    alt="navigation"
+                />
             </div>
         </nav>
     );

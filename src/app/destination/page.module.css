@@ -2,10 +2,20 @@
     background-image: url("/assets/destination/background-destination-desktop.jpg");
     color: white;
 
+    @media (max-width: 1180px) {
+        padding: 0 2rem;
+    }
+
     h1 {
         display: inline-flex;
         font-size: 1.75rem;
         gap: 1.75rem;
         letter-spacing: 0.29531rem;
+
+        @media (max-width: 1180px) {
+            font-size: 1rem;
+            letter-spacing: 0.16875rem;
+            gap: 1.125rem;
+        }
     }
 }
