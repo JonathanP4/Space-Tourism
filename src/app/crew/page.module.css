@@ -1,3 +1,22 @@
 .main {
     background-image: url("/assets/crew/background-crew-desktop.jpg");
+    padding: 0 2rem;
+
+    .swiperContainer {
+        padding-top: 160px;
+
+        @media (max-width: 900px) {
+            padding-top: 99px;
+        }
+
+        @media (max-width: 504px) {
+            align-items: center;
+        }
+    }
+
+    .title {
+        @media (max-width: 920px) {
+            font-size: 1.25rem;
+        }
+    }
 }

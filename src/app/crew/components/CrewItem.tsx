@@ -30,15 +30,11 @@ export default function CrewItem({ data }: { data: Crew }) {
                     {data.bio}
                 </p>
             </section>
-            <figure className="min-h-[700px] grid">
+            <figure className="grid relative">
                 <Image
                     className="self-end"
                     width={567}
                     height={712}
-                    style={{
-                        width: "auto",
-                        height: "auto",
-                    }}
                     src={data.images.webp}
                     alt={data.name}
                     priority={true}

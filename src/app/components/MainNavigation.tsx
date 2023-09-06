@@ -17,6 +17,7 @@ export default function MainNavigation() {
     return (
         <nav className={`${styles.nav} ${barlow_condensed.className}`}>
             <Image
+                className={styles.logo}
                 width={48}
                 height={48}
                 src={"/assets/shared/logo.svg"}

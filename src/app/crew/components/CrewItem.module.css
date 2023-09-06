@@ -3,16 +3,78 @@
     align-items: center;
     justify-content: space-between;
     color: white;
+    gap: 2rem;
 
-    & span {
+    @media (max-width: 920px) {
+        text-align: center;
+        flex-direction: column;
+        gap: 6rem;
+        margin-top: 1.5rem;
+    }
+
+    @media (max-width: 504px) {
+        margin-top: 2.5rem;
+        gap: 4rem;
+    }
+
+    span {
         font-size: 2rem;
+        @media (max-width: 920px) {
+            font-size: 1.5rem;
+        }
+        @media (max-width: 504px) {
+            font-size: 1rem;
+        }
     }
 
-    & h1 {
+    h1 {
         font-size: 3.5rem;
+        @media (max-width: 920px) {
+            font-size: 2.5rem;
+        }
+        @media (max-width: 504px) {
+            font-size: 1.5rem;
+        }
     }
 
-    & p {
+    p {
         font-size: 1.125rem;
+        @media (max-width: 920px) {
+            font-size: 1rem;
+        }
+        @media (max-width: 504px) {
+            font-size: 0.9375rem;
+        }
+    }
+
+    section {
+        @media (max-width: 504px) {
+            order: 2;
+        }
+    }
+
+    figure {
+        height: 810px;
+        @media (max-width: 920px) {
+            height: 532px;
+        }
+
+        @media (max-width: 504px) {
+            height: fit-content;
+            width: 300px;
+            border-bottom: 1px solid hsl(231, 15%, 26%);
+        }
+
+        img {
+            @media (max-width: 920px) {
+                height: 550px;
+                width: auto;
+            }
+
+            @media (max-width: 504px) {
+                height: 222px;
+                margin: auto;
+            }
+        }
     }
 }

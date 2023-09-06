@@ -75,6 +75,13 @@
         }
     }
 
+    .logo {
+        @media (max-width: 540px) {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
     .mobileNav {
         display: none;
         @media (max-width: 540px) {

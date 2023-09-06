@@ -24,7 +24,9 @@ export default function Crew() {
         <>
             <title>Space Tourism | Crew</title>
             <main className={styles.main}>
-                <div className="min-h-screen flex items-end pt-[160px]">
+                <div
+                    className={`${styles.swiperContainer} min-h-screen flex items-end`}
+                >
                     <Swiper
                         onActiveIndexChange={(e) => setActiveIndex(e.realIndex)}
                         className={`max-w-[1138px] w-full`}
@@ -32,7 +34,7 @@ export default function Crew() {
                     >
                         <span slot="container-start">
                             <h1
-                                className={`${barlow_condensed.className} text-[1.75rem] tracking-[0.29531rem] text-white uppercase inline-flex gap-6 -mb-5`}
+                                className={`${styles.title} ${barlow_condensed.className} text-[1.75rem] tracking-[0.29531rem] text-white uppercase inline-flex gap-6`}
                             >
                                 <span className="font-bold opacity-25">02</span>
                                 Meet your crew
