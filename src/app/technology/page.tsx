@@ -25,16 +25,16 @@ export default function Technology() {
         <>
             <title>Space Tourism | Technology</title>
             <main className={styles.main}>
-                <div className="min-h-screen w-full max-w-[1275px] items-center flex pt-[160px] ml-auto justify-between relative">
+                <div className="min-h-screen w-full max-w-[1275px] items-center flex pt-[80px] md:pt-[160px] ml-auto justify-between relative">
                     <Swiper
                         onActiveIndexChange={(e) => setActiveIndex(e.realIndex)}
-                        className={`${styles.swiper} max-w-[1130px] mr-[0!important]`}
+                        className={`${styles.swiper} max-w-[1130px] min-[1280px]:mr-[0!important]`}
                         spaceBetween={200}
                     >
                         <TechnologyNav index={activeIndex} />
                         <span slot="container-start">
                             <h1
-                                className={`${barlow_condensed.className} uppercase`}
+                                className={`${barlow_condensed.className} ${styles.title} uppercase`}
                             >
                                 <span className={`font-bold opacity-25`}>
                                     03

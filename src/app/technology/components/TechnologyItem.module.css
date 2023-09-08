@@ -4,13 +4,43 @@
     justify-content: space-between;
     color: white;
 
+    @media (max-width: 1280px) {
+        text-align: center;
+        flex-direction: column;
+        gap: 10rem;
+    }
+    @media (max-width: 540px) {
+        gap: 6rem;
+    }
+
     & section {
         & h1 {
             font-size: 3.5rem;
+
+            @media (max-width: 1280px) {
+                font-size: 2.5rem;
+            }
+            @media (max-width: 540px) {
+                font-size: 1.5rem;
+            }
         }
 
         & p {
             font-size: 1.125rem;
+            @media (max-width: 1280px) {
+                font-size: 1rem;
+            }
+            @media (max-width: 540px) {
+                max-width: 327px;
+                font-size: 0.9375rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 1.5625rem;
+            }
+        }
+
+        @media (max-width: 1280px) {
+            order: 2;
         }
     }
 }
