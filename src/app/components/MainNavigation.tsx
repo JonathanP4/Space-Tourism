@@ -16,13 +16,15 @@ export default function MainNavigation() {
     const path = usePathname();
     return (
         <nav className={`${styles.nav} ${barlow_condensed.className}`}>
-            <Image
-                className={styles.logo}
-                width={48}
-                height={48}
-                src={"/assets/shared/logo.svg"}
-                alt="space tourism logo"
-            />
+            <Link href={"/"}>
+                <Image
+                    className={styles.logo}
+                    width={48}
+                    height={48}
+                    src={"/assets/shared/logo.svg"}
+                    alt="space tourism logo"
+                />
+            </Link>
             <div className={styles.desktopNav}>
                 <ul>
                     <li>

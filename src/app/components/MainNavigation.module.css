@@ -50,21 +50,20 @@
         @media (max-width: 900px) {
             width: 356px;
         }
-    }
+        & a {
+            display: inline-flex;
+            gap: 11px;
+            padding: 2.25rem 0;
+            border-bottom: 3px solid;
+            border-color: transparent;
+            transition: all 150ms;
 
-    & a {
-        display: inline-flex;
-        gap: 11px;
-        padding: 2.25rem 0;
-        border-bottom: 3px solid;
-        border-color: transparent;
-        transition: all 150ms;
-
-        &:not(.active):hover {
-            border-color: hsla(0, 0%, 100%, 0.5);
-        }
-        &.active {
-            border-color: white;
+            &:not(.active):hover {
+                border-color: hsla(0, 0%, 100%, 0.5);
+            }
+            &.active {
+                border-color: white;
+            }
         }
     }
 
