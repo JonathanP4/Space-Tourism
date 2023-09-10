@@ -1,21 +1,17 @@
-.main {
-    background-image: url("/assets/destination/background-destination-desktop.jpg");
-    color: white;
+.destinationBg {
+    background: url("/assets/destination/background-destination-mobile.jpg")
+        no-repeat;
+    background-size: cover;
 
-    @media (max-width: 1180px) {
-        padding: 0 2rem;
+    @media (min-width: 768px) {
+        background: url("/assets/destination/background-destination-tablet.jpg")
+            no-repeat;
+        background-size: cover;
     }
 
-    h1 {
-        display: inline-flex;
-        font-size: 1.75rem;
-        gap: 1.75rem;
-        letter-spacing: 0.29531rem;
-
-        @media (max-width: 1180px) {
-            font-size: 1rem;
-            letter-spacing: 0.16875rem;
-            gap: 1.125rem;
-        }
+    @media (min-width: 1280px) {
+        background: url("/assets/destination/background-destination-desktop.jpg")
+            no-repeat;
+        background-size: cover;
     }
 }

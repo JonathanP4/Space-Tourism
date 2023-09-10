@@ -1,8 +1,7 @@
 "use client";
 
-import "./globals.css";
-
 import MainNavigation from "./components/MainNavigation";
+import "./globals.css";
 
 export default function RootLayout({
     children,
@@ -16,6 +15,7 @@ export default function RootLayout({
                 href="/assets/favicon-32x32.png"
                 type="image/x-icon"
             />
+            <title>Space Tourism | Home</title>
             <body>
                 <MainNavigation />
                 {children}

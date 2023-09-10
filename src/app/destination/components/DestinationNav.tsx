@@ -1,49 +1,53 @@
 import styles from "./DestinationNav.module.css";
-
 import { Barlow_Condensed } from "next/font/google";
-
 import { useSwiper } from "swiper/react";
 
 const barlow_condensed = Barlow_Condensed({
-    subsets: ["latin"],
     weight: ["400"],
+    subsets: ["latin"],
 });
 
-export default function DestinationNav({ index }: { index: number }) {
+export default function DestinationNav({
+    index,
+    classname,
+}: {
+    index: number;
+    classname?: string;
+}) {
     const swiper = useSwiper();
+
     return (
-        <div
-            className={`${barlow_condensed.className} flex justify-between tracking-[0.16875rem]`}
+        <ul
+            className={`${styles.navList} ${
+                barlow_condensed.className
+            } uppercase tracking-[0.15rem] flex items-center ${
+                classname || "justify-center"
+            } gap-[1.69rem] mt-[1.62rem] mb-5`}
         >
-            <div className="w-full max-w-[445px]"></div>
-            <div className="w-full max-w-[465px]">
-                <ul className={`${styles.nav} uppercase`}>
-                    <li
-                        onClick={() => swiper.slideTo(0)}
-                        className={index === 0 ? styles.active : ""}
-                    >
-                        Moon
-                    </li>
-                    <li
-                        onClick={() => swiper.slideTo(1)}
-                        className={index === 1 ? styles.active : ""}
-                    >
-                        Mars
-                    </li>
-                    <li
-                        onClick={() => swiper.slideTo(2)}
-                        className={index === 2 ? styles.active : ""}
-                    >
-                        Europa
-                    </li>
-                    <li
-                        onClick={() => swiper.slideTo(3)}
-                        className={index === 3 ? styles.active : ""}
-                    >
-                        Titan
-                    </li>
-                </ul>
-            </div>
-        </div>
+            <li
+                onClick={() => swiper.slideToLoop(0)}
+                className={`${index === 0 ? styles.active : ""} pb-2`}
+            >
+                Moon
+            </li>
+            <li
+                onClick={() => swiper.slideToLoop(1)}
+                className={`${index === 1 ? styles.active : ""} pb-2`}
+            >
+                Mars
+            </li>
+            <li
+                onClick={() => swiper.slideToLoop(2)}
+                className={`${index === 2 ? styles.active : ""} pb-2`}
+            >
+                Europa
+            </li>
+            <li
+                onClick={() => swiper.slideToLoop(3)}
+                className={`${index === 3 ? styles.active : ""} pb-2`}
+            >
+                Titan
+            </li>
+        </ul>
     );
 }

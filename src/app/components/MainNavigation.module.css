@@ -1,90 +1,38 @@
-.nav {
-    position: absolute;
-    top: 0;
-    right: 0;
-    max-width: 1417px;
-    width: 100%;
-    z-index: 20;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 2rem;
-    display: flex;
-    justify-content: space-between;
+.navList {
+    text-transform: uppercase;
     align-items: center;
-    color: white;
+    gap: 2.31rem;
+    padding: 0 3rem;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.76px);
 
-    @media (max-width: 900px) {
-        padding-top: 0rem;
-        padding-bottom: 0rem;
-    }
+    & a {
+        display: inline-flex;
+        letter-spacing: 0.16875rem;
+        gap: 0.69rem;
+        padding: 2.16rem 0;
+        border-bottom: 3px solid;
+        transition: border-color 150ms ease-in;
+        border-color: transparent;
 
-    @media (max-width: 540px) {
-        padding-top: 2rem;
-        padding-right: 2rem;
-    }
-
-    & .desktopNav {
-        width: 52rem;
-        background: hsla(var(--white) 0.04);
-        backdrop-filter: blur(40px);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        @media (max-width: 900px) {
-            max-width: 455px;
-        }
-
-        @media (max-width: 540px) {
-            display: none;
-        }
-    }
-
-    & ul {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 542px;
-        text-transform: uppercase;
-
-        @media (max-width: 900px) {
-            width: 356px;
-        }
-        & a {
-            display: inline-flex;
-            gap: 11px;
-            padding: 2.25rem 0;
-            border-bottom: 3px solid;
-            border-color: transparent;
-            transition: all 150ms;
-
+        @media (hover: hover) {
             &:not(.active):hover {
                 border-color: hsla(0, 0%, 100%, 0.5);
             }
-            &.active {
-                border-color: white;
+        }
+
+        &.active {
+            border-color: white;
+        }
+
+        & span {
+            font-weight: bold;
+            @media (min-width: 768px) {
+                display: none;
             }
-        }
-    }
-
-    & span {
-        font-weight: bold;
-        @media (max-width: 900px) {
-            display: none;
-        }
-    }
-
-    .logo {
-        @media (max-width: 540px) {
-            width: 40px;
-            height: 40px;
-        }
-    }
-
-    .mobileNav {
-        display: none;
-        @media (max-width: 540px) {
-            display: block;
+            @media (min-width: 1440px) {
+                display: block;
+            }
         }
     }
 }

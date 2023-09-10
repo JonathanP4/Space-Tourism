@@ -1,92 +1,14 @@
-.main {
-    background-image: url("/assets/home/background-home-desktop.jpg");
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-top: 170px;
+.homeBg {
+    background: url("/assets/home/background-home-mobile.jpg") no-repeat;
+    background-size: cover;
 
-    @media (max-width: 900px) {
-        text-align: center;
-        background-image: url("/assets/home/background-home-tablet.jpg");
-        flex-direction: column;
-        gap: 2rem;
-        padding-top: 140px;
+    @media (min-width: 768px) {
+        background: url("/assets/home/background-home-tablet.jpg") no-repeat;
+        background-size: cover;
     }
 
-    @media (max-width: 540px) {
-        background-image: url("/assets/home/background-home-mobile.jpg");
-        gap: 2rem;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-    }
-
-    & .textContainer {
-        max-width: 445px;
-        width: 100%;
-
-        & span {
-            font-size: 1.75rem;
-            letter-spacing: 0.29531rem;
-            color: hsl(var(--light-purple));
-            @media (max-width: 900px) {
-                font-size: 1.25rem;
-            }
-
-            @media (max-width: 540px) {
-                font-size: 1rem;
-            }
-        }
-
-        & h1 {
-            font-size: 9.375rem;
-            color: white;
-
-            @media (max-width: 540px) {
-                font-size: 5rem;
-                line-height: 6.25rem;
-            }
-        }
-
-        & p {
-            color: hsl(var(--light-purple));
-            font-size: 1.125rem;
-            line-height: 2rem;
-
-            @media (max-width: 900px) {
-                font-size: 1rem;
-            }
-
-            @media (max-width: 540px) {
-                font-size: 0.9375rem;
-                line-height: 1.5625rem;
-            }
-        }
-    }
-
-    & .exploreContainer {
-        & .exploreButton {
-            font-size: 2rem;
-            letter-spacing: 0.125rem;
-
-            color: hsl(var(--dark-gray));
-            background-color: white;
-
-            display: grid;
-            place-content: center;
-            width: 17.125rem;
-            height: 17.125rem;
-            border-radius: 50%;
-
-            @media (max-width: 900px) {
-                width: 15.125rem;
-                height: 15.125rem;
-            }
-
-            @media (max-width: 540px) {
-                width: 9.375rem;
-                height: 9.375rem;
-                font-size: 1.25rem;
-            }
-        }
+    @media (min-width: 1280px) {
+        background: url("/assets/home/background-home-desktop.jpg") no-repeat;
+        background-size: cover;
     }
 }

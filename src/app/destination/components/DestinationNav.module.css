@@ -1,28 +1,14 @@
-.nav {
-    grid-column-start: 2;
-    width: 17.84375rem;
-    display: flex;
-    justify-content: space-between;
-
-    @media (max-width: 1180px) {
-        position: absolute;
-        top: 450px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    @media (max-width: 460px) {
-        top: 300px;
-    }
-
+.navList {
     & li {
-        cursor: pointer;
-        height: 2.125rem;
-        border-bottom: 1px solid;
+        border-bottom: 3px solid;
         border-color: transparent;
+        transition: border-bottom 150ms ease-in-out;
+        cursor: pointer;
 
-        &:not(.active):hover {
-            border-color: hsla(0, 0%, 100%, 0.5);
+        @media (hover: hover) {
+            &:not(.active):hover {
+                border-color: hsla(0, 0%, 100%, 0.5);
+            }
         }
 
         &.active {
