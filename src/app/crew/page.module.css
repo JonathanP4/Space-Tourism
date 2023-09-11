@@ -1,0 +1,14 @@
+.crewBg {
+    background: url("/assets/crew/background-crew-mobile.jpg") no-repeat;
+    background-size: cover;
+
+    @media (min-width: 1280px) {
+        background: url("/assets/crew/background-crew-desktop.jpg") no-repeat;
+        background-size: cover;
+    }
+
+    @media (min-width: 768px) {
+        background: url("/assets/crew/background-crew-tablet.jpg") no-repeat;
+        background-size: cover;
+    }
+}
