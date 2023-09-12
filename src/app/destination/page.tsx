@@ -13,6 +13,7 @@ const barlow_condensed = Barlow_Condensed({
 export default function Destination() {
     return (
         <>
+            <title>Space Tourism | Destination</title>
             <div className={`${styles.destinationBg} bg`}></div>
             <main className="text-center md:text-left text-white px-6">
                 <h1

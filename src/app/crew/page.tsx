@@ -11,6 +11,7 @@ const barlow_condensed = Barlow_Condensed({
 export default function Crew() {
     return (
         <>
+            <title>Space Tourism | Crew</title>
             <div className={`${styles.crewBg} bg`}></div>
             <main className="px-6 text-center md:text-left md:px-[2.41rem]">
                 <h1

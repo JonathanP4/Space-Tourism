@@ -12,6 +12,7 @@ const barlow_condensed = Barlow_Condensed({
 export default function Technology() {
     return (
         <>
+            <title>Space Tourism | Technology</title>
             <div className={`${styles.technologyBg} bg`}></div>
             <main className="text-center md:text-left">
                 <h1

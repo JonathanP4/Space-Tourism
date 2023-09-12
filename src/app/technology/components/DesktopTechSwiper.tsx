@@ -26,14 +26,14 @@ export default function DesktopTechSwiper() {
                 loop={true}
                 spaceBetween={200}
                 onActiveIndexChange={(e) => setIndex(e.realIndex)}
-                className="mt-[1.62rem] ml-[310px]"
+                className="mt-[1.62rem]"
             >
                 <span slot="container-start">
                     <TechnologyNav index={index} />
                 </span>
                 {data.technology.map((t) => (
                     <SwiperSlide key={t.name}>
-                        <div className="flex items-center justify-end gap-40">
+                        <div className="flex items-center justify-end gap-[8rem] ml-[300px]">
                             <article className="text-white">
                                 <span
                                     className={`${barlow_condensed.className} uppercase text-light-purple tracking-[0.15rem]`}
