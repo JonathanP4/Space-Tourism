@@ -30,7 +30,6 @@ export default function TechnologySwiper() {
         <div className="text-center xl:hidden">
             <Swiper
                 modules={[Controller]}
-                loop={true}
                 spaceBetween={200}
                 onSwiper={setFirstSwiper}
                 controller={{ control: secondSwiper }}
