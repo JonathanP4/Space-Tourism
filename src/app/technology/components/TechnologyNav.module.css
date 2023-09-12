@@ -1,0 +1,47 @@
+.navList {
+    display: flex;
+    gap: 1rem;
+
+    @media (min-width: 1280px) {
+        position: absolute;
+        flex-direction: column;
+        z-index: 20;
+        gap: 2rem;
+        left: 10.31rem;
+        top: 7.56rem;
+    }
+
+    & li {
+        display: grid;
+        place-content: center;
+        cursor: pointer;
+        border: 1px solid white;
+        color: white;
+        border-radius: 50%;
+        width: 2.5rem;
+        aspect-ratio: 1;
+        background-color: hsl(230, 33%, 7%);
+        transition: background-color, color, 150ms ease-in-out;
+
+        @media (min-width: 768px) {
+            width: 3.75rem;
+            font-size: 1.5rem;
+        }
+
+        @media (min-width: 1280px) {
+            width: 5rem;
+            font-size: 2rem;
+        }
+
+        @media (hover: hover) {
+            &:not(.active):hover {
+                border-color: hsla(0, 0%, 100%, 0.5);
+            }
+        }
+
+        &.active {
+            background-color: white;
+            color: hsl(230, 33%, 7%);
+        }
+    }
+}

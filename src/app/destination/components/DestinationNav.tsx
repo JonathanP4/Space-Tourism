@@ -7,22 +7,12 @@ const barlow_condensed = Barlow_Condensed({
     subsets: ["latin"],
 });
 
-export default function DestinationNav({
-    index,
-    classname,
-}: {
-    index: number;
-    classname?: string;
-}) {
+export default function DestinationNav({ index }: { index: number }) {
     const swiper = useSwiper();
 
     return (
         <ul
-            className={`${styles.navList} ${
-                barlow_condensed.className
-            } uppercase tracking-[0.15rem] flex items-center ${
-                classname || "justify-center"
-            } gap-[1.69rem] mt-[1.62rem] mb-5`}
+            className={`${styles.navList} ${barlow_condensed.className} uppercase tracking-[0.15rem] flex items-center gap-[1.69rem]`}
         >
             <li
                 onClick={() => swiper.slideToLoop(0)}

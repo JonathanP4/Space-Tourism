@@ -1,5 +1,4 @@
 import CrewSwiper from "./components/CrewSwiper";
-import DesktopCrewSwiper from "./components/DesktopCrewSwiper";
 import styles from "./page.module.css";
 
 import { Barlow_Condensed } from "next/font/google";
@@ -20,10 +19,8 @@ export default function Crew() {
                     <span className="font-bold opacity-25">02</span>Meet your
                     crew
                 </h1>
-                <div>
-                    <CrewSwiper />
-                    <DesktopCrewSwiper />
-                </div>
+
+                <CrewSwiper />
             </main>
         </>
     );
