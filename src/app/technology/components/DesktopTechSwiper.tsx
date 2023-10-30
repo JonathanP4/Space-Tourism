@@ -1,6 +1,7 @@
 "use client";
 
 import data from "../../../../data.json";
+import styles from "./DesktopTechSwiper.module.css";
 
 import { Barlow, Barlow_Condensed, Bellefair } from "next/font/google";
 import Image from "next/image";
@@ -21,7 +22,7 @@ export default function DesktopTechSwiper() {
     const [index, setIndex] = useState(0);
 
     return (
-        <div>
+        <div className={`${styles.swiper}`}>
             <Swiper
                 loop={true}
                 spaceBetween={200}
