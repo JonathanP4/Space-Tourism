@@ -18,9 +18,9 @@ export default function RootLayout({
             />
             <title>Space Tourism | Home</title>
             <body>
-                <Analytics />
                 <MainNavigation />
                 {children}
+                <Analytics />
             </body>
         </html>
     );
