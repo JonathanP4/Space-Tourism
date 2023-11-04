@@ -2,6 +2,9 @@
 
 import MainNavigation from "./components/MainNavigation";
 import "./globals.css";
+import { inject } from "@vercel/analytics";
+
+inject();
 
 export default function RootLayout({
     children,
