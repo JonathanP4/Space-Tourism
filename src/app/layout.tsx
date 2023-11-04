@@ -2,9 +2,7 @@
 
 import MainNavigation from "./components/MainNavigation";
 import "./globals.css";
-import { inject } from "@vercel/analytics";
-
-inject();
+import { Analytics } from "@vercel/analytics/react";
 
 export default function RootLayout({
     children,
@@ -20,6 +18,7 @@ export default function RootLayout({
             />
             <title>Space Tourism | Home</title>
             <body>
+                <Analytics />
                 <MainNavigation />
                 {children}
             </body>
